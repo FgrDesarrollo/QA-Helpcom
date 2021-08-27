@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Probar la busqueda en google" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-27T21:01:00" hostname="MacBook-Pro-de-leonardo.local" time="0.198">
+  <properties/>
+  <testcase name="Un usuario busca algo en google" classname="Probar la busqueda en google" time="0.198"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
