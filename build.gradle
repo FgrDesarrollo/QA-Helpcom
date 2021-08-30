@@ -5,7 +5,7 @@ plugins {
 group 'CursoUdemy'
 version '1.0'
 
-sourceCompatibility = 15
+sourceCompatibility = 11
 
 repositories{
     mavenCentral()

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Probar la busqueda en google" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-30T17:16:22" hostname="MacBook-Pro-de-Leonardo.local" time="3.516">
+  <properties/>
+  <testcase name="Un usuario busca algo en google" classname="Probar la busqueda en google" time="3.516"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 33848
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago. 30, 2021 1:16:25 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACI?N: Detected dialect: W3C
+]]></system-err>
+</testsuite>
