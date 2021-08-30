@@ -22,10 +22,12 @@ public class GoogleSteps {
     } 
     @When("^busco algo$")
     public void buscoAlgo(){
+        google.enterSearchCriteria("Pronostico del tiempo en temuco");
 
     } 
     @And("^presiono el boton buscar$")
     public void presionoBoton(){
+        google.clickGoogleSearh();
 
     } 
     @Then("^Obtengo algo$")
