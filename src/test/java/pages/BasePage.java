@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,6 +36,11 @@ public class BasePage {
         driver.get(url);
 
     }
+
+    public static void closeBrowser(){
+        driver.quit();
+    }
+
     private WebElement Find(String locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
@@ -80,7 +86,11 @@ public class BasePage {
     }
     //esta funicon detecta una alerta y si la encuentra la ignora, para poder seguir con el test.
     public void dismissAlert(){
+        try{
         driver.switchTo().alert().dismiss();
+    }catch(NoAlertPresentException e){
+        e.printStackTrace();
+    }
     }
     // esta funcion me retorna un texto solo si lo encuentra
     public String textFromElement (String locator){

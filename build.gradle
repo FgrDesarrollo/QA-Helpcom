@@ -20,3 +20,11 @@ testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.9.1
 testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
 
 }
+// agragamos la siguiente propiedad para poder ejecutar los test desde el terminal
+test{
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+}
+
+
+// el comando para ejecutar los test es : gradle test -Dcucumber.options="--tags @Test" 
+// en caso de querer ejecutar mas de un test : gradle test -Dcucumber.options="--tags @Test1 --tags@Test2" 

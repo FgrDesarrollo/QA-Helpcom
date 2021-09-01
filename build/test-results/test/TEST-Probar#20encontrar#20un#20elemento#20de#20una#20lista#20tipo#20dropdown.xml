@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Probar encontrar un elemento de una lista tipo dropdown" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-01T17:37:49" hostname="MacBook-Pro-de-Leonardo.local" time="4.782">
+  <properties/>
+  <testcase name="Un usuario busca un texto especifico dentro de una lista" classname="Probar encontrar un elemento de una lista tipo dropdown" time="4.782"/>
+  <system-out><![CDATA[El texto hardcodeado esta en la lista
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 2657
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sep. 01, 2021 1:37:52 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACI?N: Detected dialect: W3C
+]]></system-err>
+</testsuite>

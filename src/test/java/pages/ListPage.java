@@ -2,8 +2,7 @@ package pages;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.openqa.selenium.WebDriver;
+import java.util.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 public class ListPage extends BasePage{
@@ -18,10 +17,14 @@ public class ListPage extends BasePage{
     public void navigateToListPage(){
         navigateTo("https://andreidbr.github.io/JS30/06AjaxTypeAhead/index.html");
     }
-
+    // Se agrega un try cath para controlar si el elemento que estamos buscando esta o no
     public void enterSearchCriteria() throws InterruptedException{
+        try{
         Thread.sleep(600);
-        write(searchField, "Washington");
+        write(searchField, "Los Angeles");
+        }catch(NoSuchElementException e){
+            e.printStackTrace();
+        }
     }
     //Funcion que crea una lista de string para traer los elementos de una lista de elementos que pertenecen a un dropdown
     public List<String> getAllSearchResults(){
@@ -33,10 +36,4 @@ public class ListPage extends BasePage{
         return stringFromList;
 
     }
-
-   
-    
-
-
-    
 }

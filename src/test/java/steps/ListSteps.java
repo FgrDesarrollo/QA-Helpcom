@@ -22,7 +22,7 @@ public class ListSteps {
     @Then("^Encuentro el texto que busco en la lista$")
     public void theTableIsThere(){
         List<String> lista = list.getAllSearchResults();
-        boolean textIsThere = lista.contains("seatle, washington");
+        boolean textIsThere = lista.contains("Los Angeles, California");
 
         if(textIsThere){
             System.out.println("El texto hardcodeado esta en la lista");
